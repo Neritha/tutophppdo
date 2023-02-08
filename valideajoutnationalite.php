@@ -3,12 +3,14 @@ include "connextionPDO.php";
 
 $libelle = $_POST['libelle'];
 
-$req=$monPdo->prepare("select * from nationalite");
-$req->setFetchMode(PDO::FETCH_OBJ);
-$req->execute();
-$LesNationalites = $req->fetchAll();
+$req=$monPdo->prepare("insert into nationalite(libelle) values(:libelle)");
+$req->bindParam(':libelle', $libelle);
+$nb=$req->execute();
+
+echo '<div class="conterner"> mt-5</div>'; //vidéo 20:29
+
 ?>
 
-<div class="conterner"> mt-5</div>
+if()
 
 <?php include "footer.php" ?>
