@@ -17,16 +17,16 @@ $LesNationalites = $req->fetchAll();
             <h2>Voici la liste des nationalités : </h2>
         </div>
         <div class="col-3">
-            <a href="#" class='btn btn-info'><i class="fa-solid fa-square-plus"></i> créé une nationalité</a>
+            <a href="formajoutnationalite.php" class='btn btn-info'><i class="fa-solid fa-square-plus"></i> créé une nationalité</a>
         </div>
     </div>
 
-    <table class="table table-success">
+    <table class="table table-hover table-striped">
         <thead>
             <tr>
-            <th scope="col">Numéro</th>
-            <th scope="col">Libellé</th>
-            <th scope="col">Action</th>
+            <th scope="col" calss="col-md-2">Numéro</th>
+            <th scope="col" calss="col-md-8">Libellé</th>
+            <th scope="col" calss="col-md-2">Actions</th>
             </tr>
         </thead>
         <tbody>
@@ -34,9 +34,9 @@ $LesNationalites = $req->fetchAll();
             foreach($LesNationalites as $nationalite){
                 echo "<tr>";
                 
-                echo "<td>$nationalite->num</td>";
-                echo "<td>$nationalite->libelle</td>";
-                echo "<td> 
+                echo "<td class='col-md-2'>$nationalite->num</td>";
+                echo "<td class='col-md-8'>$nationalite->libelle</td>";
+                echo "<td class='col-md-2'> 
                     <a href='#' class='btn btn-success'><i class='fa-solid fa-pencil'></i></i></a>
                     <a href='#' class='btn btn-danger'><i class='fa-regular fa-circle-xmark'></i></a>
                 </td>";

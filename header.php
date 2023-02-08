@@ -12,7 +12,7 @@
 
     <!-- Bootstrap core CSS -->
 
-<link rel="stylesheet" href="https://bootswatch.com/4/sketchy/bootstrap.css">
+<link rel="stylesheet" href="https://bootswatch.com/4/simplex/bootstrap.css">
 <script src="https://kit.fontawesome.com/75610805ea.js" crossorigin="anonymous"></script>
 
     <style>
@@ -56,7 +56,7 @@
         <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa-solid fa-shrimp"></i> Gestion des nationalités</a>
         <div class="dropdown-menu" aria-labelledby="dropdown01">
           <a class="dropdown-item" href="listeNationalites.php">Liste des nationalité</a>
-          <a class="dropdown-item" href="#">ajouter une nationalité</a>
+          <a class="dropdown-item" href="formajoutnationalite.php">ajouter une nationalité</a>
         </div>
       </li>
     </ul>
