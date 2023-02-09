@@ -2,8 +2,8 @@
 
 
 <div class="container mt-5">
-    <h2 class="text-center">Ajouter une nationaité</h2>
-    <form action="valideajoutnationalite.php" method="post" class="col-md-6 offset-md-3 border border-primary p-3 rounded" >
+    <h2 class="text-center">Modifier une nationaité</h2>
+    <form action="validemodifenationalite.php" method="post" class="col-md-6 offset-md-3 border border-primary p-3 rounded" >
         <div class="form-group">
             <label for='libelle'>Libellé</label>
             <input type="text" class='form-control' id='libelle' placeholder="saisir le ibellé" name='libelle'>
@@ -17,6 +17,3 @@
 
 
 <?php include "footer.php" ?>
-
-
-// vidéo partie 5 : 3:41
