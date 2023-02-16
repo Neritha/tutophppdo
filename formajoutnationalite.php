@@ -18,5 +18,3 @@
 
 <?php include "footer.php" ?>
 
-
-// vidéo partie 5 : 3:41
